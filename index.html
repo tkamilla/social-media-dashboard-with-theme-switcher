@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Social Media Dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="dark">
+  
+  <main class="dashboard">
+    <header>
+      <div class="social-head">
+        <h1 class="big">Social Media Dashboard</h1>
+        <div class="total med">Total Followers: 23,004</div>
+      </div>
+      <div class="modes">
+        <span class="med">Dark Mode</span>
+        <div class="toggler" id="toggler">
+          <div id="toggler-circle" class="toggler-circle"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="accounts">
+      <div class="account" id="facebook">
+        <div class="social">
+          <img src="./images/icon-facebook.svg" alt="">
+          <p class="title med">@nathanf</p>
+        </div>
+        <div class="followers">1987</div>
+        <p class="followers-text">Followers</p>
+
+        <div class="changes up">
+          <img src="./images/icon-up.svg" alt="">
+          <span>12 Today</span>
+        </div>
+      </div>
+      <div class="account" id="twitter">
+        <div class="social">
+          <img src="./images/icon-twitter.svg" alt="">
+          <p class="title med">@nathanf</p>
+        </div>
+        <div class="followers">1044</div>
+        <p class="followers-text">Followers</p>
+
+        <div class="changes up">
+          <img src="./images/icon-up.svg" alt="">
+          <span>99 Today</span>
+        </div>
+      </div>
+      <div class="account" id="instagram">
+        <div class="social">
+          <img src="./images/icon-instagram.svg" alt="">
+          <p class="title med">@realnathanf</p>
+        </div>
+        <div class="followers">11k</div>
+        <p class="followers-text">Followers</p>
+
+        <div class="changes up">
+          <img src="./images/icon-up.svg" alt="">
+          <span>1099 Today</span>
+        </div>
+      </div>
+      <div class="account" id="youtube">
+        <div class="social">
+          <img src="./images/icon-youtube.svg" alt="">
+          <p class="title med">Nathan F.</p>
+        </div>
+        <div class="followers">8239</div>
+        <p class="followers-text">Subscribers</p>
+
+        <div class="changes down">
+          <img src="./images/icon-down.svg" alt="">
+          <span>144 Today</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview">
+      <h2 class="big">Overview - Today</h2>
+      <div class="details">
+        <div class="detail">
+          <div class="views">
+            <span class="sm">Page Views</span>
+            <img src="./images/icon-facebook.svg" alt="">
+          </div>
+          <div class="nums">
+            <p class="num">87</p>
+            <div class="changes up">
+              <img src="./images/icon-up.svg" alt="">
+              <span>3%</span>
+            </div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="views">
+            <span class="sm">Likes</span>
+            <img src="./images/icon-facebook.svg" alt="">
+          </div>
+          <div class="nums">
+            <p class="num">52</p>
+            <div class="changes down">
+              <img src="./images/icon-down.svg" alt="">
+              <span>2%</span>
+            </div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="views">
+            <span class="sm">Likes</span>
+            <img src="./images/icon-instagram.svg" alt="">
+          </div>
+          <div class="nums">
+            <p class="num">5462</p>
+            <div class="changes up">
+              <img src="./images/icon-up.svg" alt="">
+              <span>2257%</span>
+            </div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="views">
+            <span class="sm">Profile Views</span>
+            <img src="./images/icon-instagram.svg" alt="">
+          </div>
+          <div class="nums">
+            <p class="num">52k</p>
+            <div class="changes up">
+              <img src="./images/icon-up.svg" alt="">
+              <span>1375%</span>
+            </div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="views">
+            <span class="sm">Retweets</span>
+            <img src="./images/icon-twitter.svg" alt="">
+          </div>
+          <div class="nums">
+            <p class="num">117</p>
+            <div class="changes up">
+              <img src="./images/icon-up.svg" alt="">
+              <span>303%</span>
+            </div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="views">
+            <span class="sm">Likes</span>
+            <img src="./images/icon-twitter.svg" alt="">
+          </div>
+          <div class="nums">
+            <p class="num">507</p>
+            <div class="changes up">
+              <img src="./images/icon-up.svg" alt="">
+              <span>553%</span>
+            </div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="views">
+            <span class="sm">Likes</span>
+            <img src="./images/icon-youtube.svg" alt="">
+          </div>
+          <div class="nums">
+            <p class="num">107</p>
+            <div class="changes down">
+              <img src="./images/icon-down.svg" alt="">
+              <span>19%</span>
+            </div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="views">
+            <span class="sm">Total Views</span>
+            <img src="./images/icon-youtube.svg" alt="">
+          </div>
+          <div class="nums">
+            <p class="num">1407</p>
+            <div class="changes down">
+              <img src="./images/icon-down.svg" alt="">
+              <span>12%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/tkamilla">Tkamilla</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
